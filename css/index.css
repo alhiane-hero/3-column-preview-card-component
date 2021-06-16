@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700&family=Lexend+Deca&display=swap');
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+.card-component {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    padding-top: 80px;
+
+    padding-bottom: 80px;
+
+    background-color: hsl( 0, 0%, 95% );
+
+}
+
+@media ( max-width: 575px ) {
+
+    .card-component {
+    
+        padding-top: 15px;
+    
+        padding-bottom: 15px;
+
+    }
+
+}
+
+.card-component .container {
+
+    width: 100%;
+
+    padding-left: 15px;
+
+    padding-right: 15px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
+
+@media ( min-width: 768px ) {
+    
+    .card-component .container {
+
+        width: 750px;
+        
+    }
+
+}
+
+@media ( min-width: 992px ) {
+    
+    .card-component .container {
+
+        width: 970px;
+        
+    }
+
+}
+
+@media ( min-width: 1200px ) {
+    
+    .card-component .container {
+
+        width: 1170px;
+
+        padding: 0 130px;
+        
+    }
+
+}
+
+.card-component .row {
+
+    display: grid;
+
+    grid-template-columns: repeat( auto-fill, minmax( 280px, 1fr ) );
+
+}
+
+.card-component .card {
+
+    padding: 40px;
+
+}
+
+.card-component .card:first-child {
+
+    background-color: #E28525;
+
+    border-radius: 8px 0 0 8px;
+    
+}
+
+.card-component .card:nth-child( 2 ) {
+
+    background-color: #156972;
+    
+}
+
+.card-component .card:last-child {
+
+    background-color: #09403F;
+
+    border-radius: 0 8px 8px 0;
+    
+}
+
+@media ( max-width: 575px ) {
+
+    .card-component .card:first-child {
+
+        border-radius: 8px 8px 0 0;
+
+    }
+
+    .card-component .card:nth-child( 2 ) {
+
+        border-radius: 0 0 0 0;
+
+    }
+
+    .card-component .card:last-child {
+
+        border-radius: 0 0 8px 8px;
+
+    }
+
+}
+
+@media ( min-width: 576px ) and ( max-width: 992px ) {
+
+    .card-component .card:first-child {
+
+        border-radius: 8px 0 0 0;
+
+    }
+
+    .card-component .card:nth-child( 2 ) {
+
+        border-radius: 0 8px 8px 0;
+
+    }
+
+    .card-component .card:last-child {
+
+        border-radius: 0 0 8px 8px;
+
+    }
+    
+}
+
+.card-component .card .img-box {
+
+    margin-bottom: 25px;
+
+}
+
+.card-component .card h3 {
+
+    font-family: 'Big Shoulders Display';
+    
+    font-size: 36px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: hsl( 0, 0%, 95% );
+
+    margin-bottom: 25px;
+
+}
+
+.card-component .card p {
+
+    font-family: 'Lexend Deca', sans-serif;
+    
+    font-size: 15px;
+
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    color: hsla( 0, 0%, 100%, 0.75 );
+
+    margin-bottom: 80px;
+
+}
+
+@media ( max-width: 576px ) {
+
+    .card-component .card p {
+
+        margin-bottom: 35px;
+
+    }
+    
+}
+
+.card-component .card .btn {
+
+    display: flex;
+
+    width: fit-content;
+
+    padding: 12px 25px;
+
+    border: 2px solid transparent;
+
+    background-color: hsl( 0, 0%, 95% );
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-family: 'Lexend Deca', sans-serif;
+    
+    font-size: 15px;
+
+    transition: .5s;
+
+}
+
+.card-component .card:first-child .btn {
+
+    color: #E28525;
+
+}
+
+.card-component .card:nth-child( 2 ) .btn {
+
+    color: #156972;
+
+}
+
+.card-component .card:last-child .btn {
+
+    color: #09403F;
+
+}
+
+.card-component .card .btn:hover {
+
+    background-color: transparent;
+
+    border-color: hsl( 0, 0%, 95% );
+
+    color: hsl( 0, 0%, 95% );
+
+}
