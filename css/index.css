@@ -217,7 +217,7 @@
 
 .card-component .card .btn {
 
-    display: flex;
+    display: block;
 
     width: fit-content;
 
